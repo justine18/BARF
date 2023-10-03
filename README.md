@@ -10,7 +10,7 @@ This repository contains a mathematical optimization model that calculates a fea
     - activity
     - products
     - ...
-- solve the model
+- run the notebook
 - buy the suggested products
 - mix everything in a  big bowl
 - distribute the mixed food to small bowls
