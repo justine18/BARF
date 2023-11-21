@@ -4,7 +4,7 @@ import pandas as pd
 class Product:
     def __init__(self, name, price, volume, fat, category,
                  muscle=0, lung=0, liver=0, kidney=0, spleen=0, heart=0,
-                 fish=0, pansen=0, rfk=0, vegetable=0, fruit=0, inventory=0):
+                 fish=0, pansen=0, blaettermagen=0, rfk=0, vegetable=0, fruit=0, inventory=0):
         self.name = name
         self.price = price
         self.volume = volume
@@ -19,6 +19,7 @@ class Product:
         self.spleen = spleen
         self.heart = heart
         self.pansen = pansen
+        self.blaettermagen = blaettermagen
         self.rfk = rfk
         self.vegetable = vegetable
         self.fruit = fruit
@@ -27,6 +28,7 @@ class Product:
             'Muscle': muscle + fish,
             'Intestinals': liver + lung + kidney + spleen + heart,
             'Pansen': pansen,
+            'Blättermagen': blaettermagen,
             'RFK': rfk,
             'Vegetable': vegetable,
             'Fruit': fruit
@@ -67,6 +69,7 @@ def calc_demand(mod, comp, weeklydemand):
         ['Muscle', mod['Meat']],
         ['Intestinals', mod['Meat']],
         ['Pansen', mod['Meat']],
+        ['Blättermagen', mod['Meat']],
         ['RFK', mod['Meat']],
         ['Vegetable', mod['Veg & Fruit']],
         ['Fruit', mod['Veg & Fruit']]
