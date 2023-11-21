@@ -4,7 +4,7 @@ BARF Plan according to [Nadine Wolf - Das BARF Buch](https://www.amazon.de/gp/pr
 This repository contains a mathematical optimization model that calculates a feasible BARF ratio according to Nadine Wolf and Swanie Simon. Based on a list of products the cheapest BARF ratio is generated that satisfies all nutrion requirements.
 
 ## How to use
-- Open on Colab
+- [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/justine18/BARF/blob/master/BARF.ipynb)
 - Adjust input data
     - dog weight
     - activity
